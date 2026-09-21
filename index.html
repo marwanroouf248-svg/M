@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Energy Sales CRM</title><link rel="stylesheet" href="style.css"></head>
+<body><div id="app"><section id="login" class="screen"><div class="card login"><h1>Energy Sales CRM</h1><p>Sales Management System</p><input id="email" type="email" placeholder="البريد الإلكتروني"><input id="password" type="password" placeholder="كلمة السر"><button id="loginBtn">تسجيل الدخول</button><div id="loginMsg"></div></div></section>
+<section id="main" hidden><header><div><h1>Energy Sales CRM</h1><span id="userInfo"></span></div><button id="logoutBtn" class="ghost">خروج</button></header>
+<nav><button data-view="dashboard" class="active">Dashboard</button><button data-view="leads">Leads</button><button data-view="calls">Calls</button><button data-view="rank">Rank-In</button></nav>
+<main><div id="view-dashboard" class="view"></div><div id="view-leads" class="view" hidden></div><div id="view-calls" class="view" hidden></div><div id="view-rank" class="view" hidden></div></main></section></div>
+<div id="modal" class="modal" hidden></div><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js"></script></body></html>
